@@ -136,17 +136,6 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
           ]
         },
         {
-          text: 'Simai扩展',
-          base: '/majdataplay/simai-extension',
-          collapsed: true,
-          items: [
-            {
-              text: 'Slide Code',
-              link: '/slidecode'
-            }
-          ]
-        },
-        {
           text: '开发',
           base: '/majdataplay/development',
           collapsed: true,
@@ -233,6 +222,17 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
             {
               text: '音量',
               link: '/volume'
+            }
+          ]
+        },
+        {
+          text: 'Simai扩展',
+          base: '/majdataplay/simai-extension',
+          collapsed: true,
+          items: [
+            {
+              text: 'Slide Code',
+              link: '/slidecode'
             }
           ]
         },
