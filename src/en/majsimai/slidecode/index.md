@@ -6,7 +6,7 @@
 
 A Slide Code consists of only two types of elements:
 
-* **Instructions**: uppercase letters `A, B, C, K, P, Q`  
+* **Instructions**: uppercase letters `A, B, C, K, P, Q`\
   (Note that the starting instruction `X` is omitted in the actual syntax.)
 * **Parameters**: digits `0~9`
 
