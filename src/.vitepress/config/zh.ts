@@ -227,7 +227,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         },
         {
           text: 'Simai扩展',
-          base: '/majdataplay/simai-extension',
+          base: '/majdatax/simai-extension',
           collapsed: true,
           items: [
             {
