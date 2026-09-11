@@ -225,17 +225,31 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
             }
           ]
         },
+      ]
+    },
+    {
+      text: 'MajSimai',
+      base: '/majsimai',
+      collapsed: false,
+      items: [
+        { text: '简介', link: '/' },
         {
-          text: 'Simai扩展',
-          base: '/majdatax/simai-extension',
-          collapsed: true,
+          text: 'Slide Code',
+          base: '/majsimai/slidecode',
+          collapsed: false,
           items: [
-            {
-              text: 'Slide Code',
-              link: '/slidecode'
-            }
+            { text: '概览', link: '/index' },
+            { text: '节点指令', link: '/nodes' },
+            { text: '轨道指令', link: '/tracks' },
+            { text: '省略规则与 Simai 兼容', link: '/shorthand' },
+            { text: '节点与轨道的连接', link: '/node-paths' },
+            { text: '轨道之间的连接', link: '/track-transitions' },
+            { text: '判定队列解析', link: '/judgment' },
+            { text: '外观设计建议', link: '/appearance' },
+            { text: '玩法设计建议', link: '/playability' },
+            { text: '配置样例', link: '/examples' }
           ]
-        },
+        }
       ]
     },
     {

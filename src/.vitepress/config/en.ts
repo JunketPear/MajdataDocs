@@ -136,17 +136,6 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
           ],
         },
         {
-          text: 'Simai Extensions',
-          base: '/en/majdataplay/simai-extension',
-          collapsed: true,
-          items: [
-            {
-              text: 'Slide Code',
-              link: '/slidecode'
-            }
-          ]
-        },
-        {
           text: 'Development',
           base: '/en/majdataplay/development',
           collapsed: true,
@@ -237,6 +226,31 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
           ],
         },
       ],
+    },
+    {
+      text: 'MajSimai',
+      base: '/en/majsimai',
+      collapsed: false,
+      items: [
+        { text: 'Introduction', link: '/' },
+        {
+          text: 'Slide Code',
+          base: '/en/majsimai/slidecode',
+          collapsed: false,
+          items: [
+            { text: 'Overview', link: '/index' },
+            { text: 'Instructions', link: '/instructions' },
+            { text: 'Expansion and Shorthand Rules', link: '/shorthand' },
+            { text: 'Geometric Definitions', link: '/geometry' },
+            { text: 'Node → Node', link: '/node-to-node' },
+            { text: 'Node → Track', link: '/node-to-track' },
+            { text: 'Track → Node', link: '/track-to-node' },
+            { text: 'Track → Track', link: '/track-to-track' },
+            { text: 'Transitions Between Tracks 0–8', link: '/inner-transitions' },
+            { text: 'Track Transitions Involving Track 9', link: '/outer-transitions' }
+          ]
+        }
+      ]
     },
     {
       text: 'More',
