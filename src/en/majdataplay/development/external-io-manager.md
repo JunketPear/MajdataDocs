@@ -177,8 +177,8 @@ MajdataPlay writes to the LED pipe and the external manager reads from it. After
 
 The payload contains zero or more consecutive 4-byte records:
 
-| Record offset | Size | Field |
-| ---: | ---: | --- |
+| Record offset | Size | Field | Description |
+| ---: | ---: | --- | --- |
 | `0` | 1 byte | LED Index | Zone index `0–7` |
 | `1` | 1 byte | Red | Red component `0–255` |
 | `2` | 1 byte | Green | Green component `0–255` |
