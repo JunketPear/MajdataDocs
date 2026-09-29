@@ -218,7 +218,9 @@ LED Pipe模式的发送周期使用LED `RefreshRateMs`，但最大会被限制�
 
 ### 6.4 亮度说明
 
-当前MajdataPlay的Pipe实现直接把Unity颜色分量乘以255后发送，并未在Pipe序列化阶段应用全局 `_brightness`。外部管理器应把收到的RGB视为最终的8位颜色值；若需要额外亮度控制，应在硬件适配层中明确实现。
+当前MajdataPlay的Pipe实现直接把Unity颜色分量乘以255后发送，并未在Pipe序列化阶段应用全局 `_brightness`。
+
+管理器应把收到的RGB视为最终的8位颜色值；若需要额外亮度控制，应在硬件适配层中明确实现。
 
 ## 7. 连接、重连与生命周期
 
@@ -232,7 +234,7 @@ MajdataPlay的Pipe客户端具有以下行为：
 
 建议管理器：
 
-- 每个设备和玩家使用独立服务端循环；
+- 每个设备和Player使用独立服务端循环；
 - 客户端断开后释放当前 `NamedPipeServerStream`，再创建新实例等待重连；
 - 不要因为单个设备断开而终止整个IO管理器；
 - 使用取消令牌支持正常退出；
@@ -402,7 +404,7 @@ public readonly record struct Rgb24(byte R, byte G, byte B);
 
 ## 9. 配置要求
 
-在MajdataPlay/NapCat 的IO 配置中，需要：
+在MajdataPlay的IO配置中，需要：
 
 1. 将Manufacturer设置为 `Pipe`；
 2. 启用所需的按键环、触摸面板和 LED 设备；

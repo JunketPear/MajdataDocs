@@ -394,7 +394,7 @@ public readonly record struct Rgb24(byte R, byte G, byte B);
 
 ## 9. Configuration Requirements
 
-In the MajdataPlay/NapCat IO configuration:
+In the MajdataPlay IO configuration:
 
 1. Set the device manufacturer to `Pipe`.
 2. Enable the required button ring, touch panel, and LED devices.
