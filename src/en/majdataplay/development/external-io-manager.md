@@ -95,21 +95,21 @@ The complete report packet is `7 + 8 = 15` bytes.
 
 | Bit | Button |
 | ---: | --- |
-| 0 | A1 |
-| 1 | A2 |
-| 2 | A3 |
-| 3 | A4 |
-| 4 | A5 |
-| 5 | A6 |
-| 6 | A7 |
-| 7 | A8 |
+| 0 | BA1 |
+| 1 | BA2 |
+| 2 | BA3 |
+| 3 | BA4 |
+| 4 | BA5 |
+| 5 | BA6 |
+| 6 | BA7 |
+| 7 | BA8 |
 | 8 | Test |
 | 9 | Select P1 |
 | 10 | Service |
 | 11 | Select P2 |
 | 12–63 | Reserved; write `0` |
 
-For example, if A1, A3, and Test are pressed:
+For example, if BA1, BA3, and Test are pressed:
 
 ```text
 mask = (1 << 0) | (1 << 2) | (1 << 8) = 0x0000000000000105
