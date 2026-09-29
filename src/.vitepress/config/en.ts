@@ -144,6 +144,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
               text: 'Build MajdataPlay',
               link: '/build',
             },
+            {
+              text: 'External IO Manager',
+              link: '/external-io-manager',
+            }
           ],
         },
         {
