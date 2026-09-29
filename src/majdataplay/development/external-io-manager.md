@@ -31,7 +31,9 @@ MajdataPlay会作为**命名管道客户端**连接外部IO管理器。因此，
 
 ## 2. 管道名称
 
-管道名称包含玩家编号。`{PlayerIndex}` 通常为 `1` 或 `2`。
+管道名称包含Player编号
+
+`{PlayerIndex}` 通常为 `1` 或 `2`。
 
 | 设备 | 管道名称 |
 | --- | --- |
@@ -57,7 +59,7 @@ MajdataPlay会作为**命名管道客户端**连接外部IO管理器。因此，
 | ---: | ---: | --- | --- |
 | `0` | 2 bytes | Identity | 固定为 `0x0448`，线上字节为 `48 04` |
 | `2` | 1 bytes | Type | `0x00` 心跳，`0x01` 报告 |
-| `3` | 2 bytes | Version | 协议版本，当前发送端默认写入 `0` |
+| `3` | 2 bytes | Version | 协议版本，默认写入 `0` |
 | `5` | 2 bytes | Length | Payload 长度，小端序 |
 | `7` | Length bytes | Payload | 设备数据 |
 
@@ -82,9 +84,11 @@ MajdataPlay会作为**命名管道客户端**连接外部IO管理器。因此，
 - 收到异常长度后丢弃错误帧并重新同步；
 - 保留末尾不完整数据，等待下一次读取。
 
-MajdataPlay输入端允许的最大Payload为`1024 bytes`。外键与触摸的有效Payload必须严格为`8 bytes`。
+MajdataPlay输入端允许的最大Payload为`1024 bytes`
 
-## 4. 按键环输入
+外键与触摸的有效Payload必须严格为`8 bytes`。
+
+## 4. 外键输入
 
 ### 4.1 Payload
 
@@ -99,21 +103,21 @@ MajdataPlay输入端允许的最大Payload为`1024 bytes`。外键与触摸的�
 
 | Bit | 按钮 |
 | ---: | --- |
-| 0 | A1 |
-| 1 | A2 |
-| 2 | A3 |
-| 3 | A4 |
-| 4 | A5 |
-| 5 | A6 |
-| 6 | A7 |
-| 7 | A8 |
+| 0 | BA1 |
+| 1 | BA2 |
+| 2 | BA3 |
+| 3 | BA4 |
+| 4 | BA5 |
+| 5 | BA6 |
+| 6 | BA7 |
+| 7 | BA8 |
 | 8 | Test |
 | 9 | Select P1 |
 | 10 | Service |
 | 11 | Select P2 |
 | 12–63 | 保留，建议写 `0` |
 
-例如，A1、A3 和 Test 同时按下时：
+例如，BA1、BA3 和 Test 同时按下时：
 
 ```text
 mask = (1 << 0) | (1 << 2) | (1 << 8) = 0x0000000000000105
