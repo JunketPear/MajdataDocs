@@ -6,7 +6,7 @@ Since the software is still being updated continuously, the related options or d
 
 ## Windows/Mac/Linux
 
-For the Windows version, we provide a wide variety of connection methods and have added automatic detection.
+For the Windows/Mac/Linux version, we provide a wide variety of connection methods and have added automatic detection.
 
 In most cases you do not need to modify the configuration file; the game automatically detects your input method. You can of course also change the related settings yourself in `settings.json`.
 
