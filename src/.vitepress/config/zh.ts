@@ -143,6 +143,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
             {
               text: '编译 MajdataPlay',
               link: '/build'
+            },
+            {
+              text: '外部IO管理器',
+              link: '/external-io-manager'
             }
           ]
         },
