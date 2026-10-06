@@ -273,7 +273,7 @@
 | `TouchCAreaExtraRadius` | 浮点 | `0.25` | **模拟触摸 C 区半径**, 扩大 C 触摸区的触发半径 |
 | `TouchDAreaExtraRadius` | 浮点 | `0.2` | **模拟触摸 D 区半径**, 扩大 D 触摸区的触发半径 |
 | `TouchEAreaExtraRadius` | 浮点 | `0.1` | **模拟触摸 E 区半径**, 扩大 E 触摸区的触发半径 |
-| `TouchRadiusAdjust` | 浮点 | `0.0` | **触摸面积比例**, 根据手指接触面积调整触摸触发范围, `0` 为禁用. 范围 `0`~`2` |
+| `TouchRadiusAdjust` | 浮点 | `0.0` | **触摸面积比例**, 根据手指接触面积调整触摸触发范围, `0` 为禁用. 范围 `0`~`2` 。~~不要调的过于离谱，赛博灯泡.gif~~|
 | `DisplayRuntimeInfo` | 布尔 | `true` | **显示帧率和版本号**, 在右上角显示帧率和版本号 |
 | `FullScreen` | 布尔 | `true` | **强制全屏** <mark>隐藏</mark>, 仅 Windows / Linux / macOS 存在 |
 | `MenuOptionIterationSpeed` | 整数 | `45` | **菜单选项连按速度** <mark>隐藏</mark>, 值越大滚动越快 |
